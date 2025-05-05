@@ -108,3 +108,27 @@ nav a:hover {
   display: inline-block;
   margin-bottom: 1em;
 }
+.demo-frame {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #444;
+  margin-top: 1em;
+  background: #000;
+}
+
+.pixel-partner {
+  width: 80px;
+  height: 80px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect width="10" height="10" fill="black"/><rect x="1" y="2" width="2" height="2" fill="cyan"/><rect x="4" y="2" width="2" height="2" fill="cyan"/><rect x="2" y="5" width="4" height="3" fill="blue"/></svg>') no-repeat center center;
+  background-size: contain;
+}
+
+@keyframes bootup {
+  0% { opacity: 0; transform: scale(1.5); }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.container {
+  animation: bootup 2s ease-out;
+}
