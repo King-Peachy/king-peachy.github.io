@@ -2,19 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Examples - Noodle Games</title>
+  <title>Code Portfolio | Noodle Games</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="examples.html">Examples</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-  <h1>Examples & Prototypes</h1>
-  <p>Since currently, this is just a one person operation, I also do contract work</p>
-  <p>Currently I need to make a demo repo for displaying various skills</p>
+  <div class="glitch-bg"></div>
+  <div class="container">
+    <h1>Code Portfolio</h1>
+    <p>Here are some sample scripts and code examples from the Obsession project and other contract-ready utilities.</p>
+    <div class="code-example">
+      <h3>Enemy AI Chase Logic</h3>
+      <pre><code>
+void Update() {
+  if (Vector2.Distance(transform.position, target.position) &lt; chaseRange) {
+    MoveTowardsTarget();
+  }
+}
+      </code></pre>
+    </div>
+    <div class="code-example">
+      <h3>Partner Swipe Attack</h3>
+      <pre><code>
+public void ExecuteSwipe() {
+  // 60 degree melee cone
+  Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange);
+  foreach (var enemy in hitEnemies) {
+    enemy.TakeDamage(attackPower);
+  }
+}
+      </code></pre>
+    </div>
+  </div>
 </body>
 </html>
