@@ -2,27 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Code Portfolio | Noodle Games</title>
+  <title>Examples | Obsession</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="glitch-bg"></div>
-  <div class="container">
-    <h1>Code Portfolio</h1>
-    <p>Here are some sample scripts and code examples from the Obsession project and other contract-ready utilities.</p>
-    <div class="code-example">
-      <h3>Enemy AI Chase Logic</h3>
-      <pre><code>
+
+<div class="glitch-bg"></div>
+<div class="container">
+  <h1>Code Portfolio</h1>
+  
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="examples.html">Code Portfolio</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+  <p>Here are some sample scripts and code examples from the Obsession project and other contract-ready utilities.</p>
+  <div class="code-example">
+    <h3>Enemy AI Chase Logic</h3>
+    <pre><code>
 void Update() {
   if (Vector2.Distance(transform.position, target.position) &lt; chaseRange) {
     MoveTowardsTarget();
   }
 }
-      </code></pre>
-    </div>
-    <div class="code-example">
-      <h3>Partner Swipe Attack</h3>
-      <pre><code>
+    </code></pre>
+  </div>
+  <div class="code-example">
+    <h3>Partner Swipe Attack</h3>
+    <pre><code>
 public void ExecuteSwipe() {
   // 60 degree melee cone
   Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange);
@@ -30,8 +40,9 @@ public void ExecuteSwipe() {
     enemy.TakeDamage(attackPower);
   }
 }
-      </code></pre>
-    </div>
+    </code></pre>
   </div>
+</div>
+
 </body>
 </html>
